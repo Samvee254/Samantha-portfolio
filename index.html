@@ -1,0 +1,200 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samantha Vivian | Portfolio</title>
+  <!-- Link to Google Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    /* 1. Global Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    /* 2. Sticky Header with Glass Effect */
+    header {
+      background: rgba(15, 23, 42, 0.95);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8; /* Tech Blue */
+    }
+
+    /* 3. Section Styling */
+    section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #0f172a;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #38bdf8;
+      font-weight: 300;
+      margin-top: 5px;
+    }
+
+    /* 4. Project Card Decoration */
+    .project-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-color: #38bdf8;
+    }
+
+    /* 5. Button Decoration */
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 20px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .contact-info i {
+      color: #38bdf8;
+      margin-right: 10px;
+      width: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #0f172a;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Samantha Vivian</h1>
+  <p class="tagline">
+    Aspiring Data Engineer | Cybersecurity Enthusiast | Cloud Computing Learner
+  </p>
+
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pitch">Pitch</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="bio">
+  <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+  <p>
+    I am <strong>Samantha Vivian</strong>, a dedicated student at Machakos University and a passionate learner in the ALX Data Engineering track. 
+    I specialize in building secure, scalable data systems and exploring the intersection of Cloud Computing and Cybersecurity. 
+    My goal is to leverage Python and SQL to solve complex real-world data challenges.
+  </p>
+</section>
+
+<section id="portfolio">
+  <h2><i class="fas fa-code-branch"></i> Portfolio</h2>
+  <div class="project-list">
+    <div class="project-card">
+      <h3>WiFi Security</h3>
+      <p>Public WiFi Awareness Prototype designed in Visily.</p>
+      <a href="https://app.visily.ai/projects/5adc25da-9ae0-416d-90e9-488bb4b39093/boards/2570377" target="_blank" style="color:#38bdf8; text-decoration:none;">View Project &rarr;</a>
+    </div>
+    <div class="project-card">
+      <h3>AiCE Certification</h3>
+      <p>Showcasing milestones in AI Fundamentals and automation.</p>
+      <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=Certificate+of+Completion+for+AI+Career+Essentials&organizationId=29117326&issueYear=2026&issueMonth=5&certUrl=https%3A%2F%2Fehub.alxafrica.com%2Fob3%2Fverify-certificate%2F99259d62-222b-43c4-ae57-805893b86af2&certId=99259d62-222b-43c4-ae57-805893b86af2" target="_blank" style="color:#38bdf8; text-decoration:none;">View Certificate &rarr;</a>
+    
+    <div class="project-card">
+      <h3>Python Analytics</h3>
+      <p>Advanced data manipulation and recursive logic functions.</p>
+    </div>
+  </div>
+
+  <a class="button" href="#"><i class="fas fa-file-download"></i> Download Full CV</a>
+</section>
+
+<section id="pitch">
+  <h2><i class="fas fa-microphone"></i> Elevator Pitch</h2>
+  <p>Click below to watch my 60-second professional introduction.</p>
+  <a class="button" href="https://drive.google.com/file/d/1VM8xLmMaUg2LfsHL1m03yHJg3Nr9qdAg/view?usp=sharing" target="_blank">Watch Video</a>
+</section>
+
+<section id="contact">
+  <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+  <div class="contact-info">
+    <p><i class="fas fa-phone"></i> +254 791 773 465</p>
+    <p><i class="fas fa-envelope"></i> samvee4141@gmail.com</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vivian-samantha-b510623ba" target="_blank" style="color:inherit; text-decoration:none;">vivian-samantha-b510623ba</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/Samvee254" target="_blank" style="color:inherit; text-decoration:none;">github.com/Samvee254</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Samantha Vivian | Built with Logic and Creativity</p>
+</footer>
+
+</body>
+</html>
